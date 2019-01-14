@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Pomodoro Clock`,
-    description: ``,
+    description: `A 'pomodoro' style timer for alternating work and break time.`,
     author: `Leo Torres leohtor@gmail.com`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
