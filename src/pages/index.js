@@ -22,8 +22,8 @@ class IndexPage extends Component {
     super(props)
 
     this.state = {
-      break: Date(),
-      session: Date()
+      break: performance.now(),
+      session: performance.now(),
     }
   }
   render() {
@@ -39,6 +39,8 @@ class IndexPage extends Component {
               </div>  
           </div>
 
+          <div id="break-length">5</div>
+
           <div id="session-label">
               Session Length
               <div>
@@ -47,20 +49,14 @@ class IndexPage extends Component {
               </div>  
           </div>
 
-
-
-          <div id="break-length">5</div>
-          
-
           <div id="timer-label">
               Session
               <div id="session-length">
                 25
-                {/* {this.state.session} */}
               </div>
           </div>
-
-          <div id="time-left">{Date() }</div>
+          
+          <div id="time-left">{performance.now()}</div>
 
           <div>
             <button id="start_stop">Start / Stop</button>
